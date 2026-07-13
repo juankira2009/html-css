@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+/* 
+Em html é "id = e em css é "#"
+
+Tudo em htm é "class =" em css em css é " . " (ponto) para selecionar a classe
+*/
+
+
+
+body{
+    background-color: #ecd7ff;
+    font-family: Arial, sans-serif;
+}
+h1{
+    color: rgb(166, 137, 239);
+}
+
+h1#principal{
+    color: #ecd7ff;
+    text-align: center;
+    background-color: rgb(166, 137, 239);
+
+}
+h2{
+    color: rgb(182, 135, 239);
+}
+
+.básico{
+    color: seagreen;
+    font-weight: bold;
+}
+
+.intermediário{
+    color: rgb(243, 215, 40);
+    
+}
+
+.avançado{
+    color: tomato;
+}
+
+.destaque{
+     background-color: rgb(57, 1, 141);
+    font-size: 20px;
+    font-weight: bold;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes externas</title>
+    <style>
+@font-face {
+    font-family: 'ancient';
+    src: url('fonts/Ancient Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'london';
+    src: url('fonts/OldLondon.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+    /*
+    tipos de format()
+    - opentype
+    - truetype
+    -embed-opentype
+    -truetype-att (apple advanced typography)
+    -svg (scalable vector graphics)
+    -woff (web open font format)
+
+*/
+
+body {
+    font-family: 'ancient', times, serif;
+    font-size: 2.5em;
+    font-weight: normal;
+    font-style: normal;
+}   
+
+h1 {
+    font-family: 'london', Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    font-weight: normal;
+    font-style: normal;
+}
+    </style>
+</head>
+<body>
+    <h1>Opa, opa, tudo belezura?</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum accusantium minima nobis sint, quaerat accusamus consequatur tempore expedita cupiditate dolore laboriosam voluptatum. Temporibus omnis officiis asperiores, porro magnam eum quidem!</p>
+</body>
+</html>

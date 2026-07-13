@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Old London';
+    src: url('fonts/..Olondona.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body{
+    font-family: 'times new roman', serif;
+    background-color: bisque;
+    margin: 0px;
+}
+h1{
+font-family: Georgia, 'Times New Roman', Times, serif;
+text-align: center;
+box-shadow: 5px 3px 1px rgba(0, 0, 0, 0.087);
+}
+h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+
+}
+header{
+padding: 10px;
+margin: 10px;
+background-color: burlywood;
+}
+
+nav{
+    background-color: antiquewhite;
+    padding: 3px;
+    text-align: center;
+    box-shadow: 5px 3px 1px rgba(0, 0, 0, 0.187)
+}
+nav > a{
+    text-decoration: none;
+    color: darkred;
+    font-weight: bold;
+    margin: 5px;
+    
+}
+nav > a:hover{
+    color: darkcyan;
+text-decoration: none;
+}
+
+main{
+    padding: 10px;
+    margin: 10px;
+    background-color: burlywood;
+    border-radius: 10px 2px;
+    box-shadow: 4px 3px 5px rgba(0, 0, 0, 0.295);
+}
+article{
+background-color:antiquewhite;
+}
+
+article > aside {
+background-color: rgb(180, 146, 146);
+text-align: right;
+
+}
+footer{
+  background-color: rgb(100, 76, 71);  
+  color: white;
+  text-align: center;
+  padding: 4px;
+  margin: 0px;
+}
+footer > p{
+    margin: 0px;
+}
+div#bola{
+height: 100px;
+width: 100px;
+margin: 10px;
+background-color: aliceblue;
+border-radius: 50%;
+}
