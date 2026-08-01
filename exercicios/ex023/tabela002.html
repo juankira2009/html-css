@@ -17,6 +17,8 @@
         table{
             width: 500px;
             margin: auto;
+            border-collapse: collapse;
+            position:relative
             
         }
 
@@ -31,8 +33,34 @@
                 color: rgb(197, 255, 236);
             }
 
+            thead th{
+                position: sticky;
+                top: -1px;
+            background-color: cadetblue;
+                color: rgb(197, 255, 236);
+            }
+
+
             .numero{
                 text-align: right;
+            }
+
+            caption{
+                font-size: 1.3rem;
+                font-weight: bold;
+                padding: 10px;
+                background-color: rgba(91, 210, 214, 0.219);
+                
+            }
+
+            tbody tr:nth-child(odd){ /*  2n-1 */
+                background-color: rgba(95, 158, 160, 0.26);
+                color: rgb(0,0,0);
+            }
+
+            tbody tr:nth-child(even){ /* 2n */
+                background-color: whitesmoke;
+                color: rgb(5, 77, 77);
             }
 
             
@@ -55,10 +83,12 @@
 
 <table>
 
+    <caption>Tabela de população brasileira por unidade federativa</caption>
+
 <thead>
-        <th>Unidade federativa</th>
-        <th>abreviação da bandeira</th>
-        <th>número populacional</th>
+        <th scope="col">Unidade federativa</th>
+        <th scope="col">abreviação da bandeira</th>
+        <th scope="col">número populacional</th>
 </thead>
 
 <tbody>
@@ -203,11 +233,25 @@
 </tbody>
 
 <tfoot>
-    <th>total de habitantes</th>
-    <td class="numero"><strong>213.421.037</strong></td>
+    <th scope="row">total de habitantes</th>
+    <td class="numero" colspan="2"><strong>213.421.037</strong></td>
 </tfoot>
-
-
 </table>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente et excepturi dicta eius, rerum odit! Animi quod ipsa adipisci accusantium ipsum amet facere repellendus. Atque ratione animi soluta possimus assumenda. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus, at, quia nobis nulla mollitia minima, repellendus consequuntur delectus dolor tempore repudiandae odit veritatis illum ipsa cum esse. Dicta, quibusdam animi! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident nihil amet itaque, fuga quod officiis qui odio perspiciatis ratione suscipit, cumque quasi vel iure quae sit iusto error incidunt ad! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe ab, suscipit quaerat dolorum distinctio harum aliquam dignissimos fuga laboriosam ratione deleniti alias recusandae perspiciatis accusantium! Aliquam necessitatibus molestiae provident. Saepe. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe aperiam deserunt nobis nam impedit perspiciatis, nemo dolores est exercitationem reprehenderit nesciunt sapiente maxime ratione aut harum nulla vel reiciendis tenetur.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente et excepturi dicta eius, rerum odit! Animi quod ipsa adipisci accusantium ipsum amet facere repellendus. Atque ratione animi soluta possimus assumenda. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus, at, quia nobis nulla mollitia minima, repellendus consequuntur delectus dolor tempore repudiandae odit veritatis illum ipsa cum esse. Dicta, quibusdam animi! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident nihil amet itaque, fuga quod officiis qui odio perspiciatis ratione suscipit, cumque quasi vel iure quae sit iusto error incidunt ad! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe ab, suscipit quaerat dolorum distinctio harum aliquam dignissimos fuga laboriosam ratione deleniti alias recusandae perspiciatis accusantium! Aliquam necessitatibus molestiae provident. Saepe. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe aperiam deserunt nobis nam impedit perspiciatis, nemo dolores est exercitationem reprehenderit nesciunt sapiente maxime ratione aut harum nulla vel reiciendis tenetur.</p>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente et excepturi dicta eius, rerum odit! Animi quod ipsa adipisci accusantium ipsum amet facere repellendus. Atque ratione animi soluta possimus assumenda. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus, at, quia nobis nulla mollitia minima, repellendus consequuntur delectus dolor tempore repudiandae odit veritatis illum ipsa cum esse. Dicta, quibusdam animi! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident nihil amet itaque, fuga quod officiis qui odio perspiciatis ratione suscipit, cumque quasi vel iure quae sit iusto error incidunt ad! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe ab, suscipit quaerat dolorum distinctio harum aliquam dignissimos fuga laboriosam ratione deleniti alias recusandae perspiciatis accusantium! Aliquam necessitatibus molestiae provident. Saepe. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe aperiam deserunt nobis nam impedit perspiciatis, nemo dolores est exercitationem reprehenderit nesciunt sapiente maxime ratione aut harum nulla vel reiciendis tenetur.</p>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente et excepturi dicta eius, rerum odit! Animi quod ipsa adipisci accusantium ipsum amet facere repellendus. Atque ratione animi soluta possimus assumenda. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus, at, quia nobis nulla mollitia minima, repellendus consequuntur delectus dolor tempore repudiandae odit veritatis illum ipsa cum esse. Dicta, quibusdam animi! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident nihil amet itaque, fuga quod officiis qui odio perspiciatis ratione suscipit, cumque quasi vel iure quae sit iusto error incidunt ad! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe ab, suscipit quaerat dolorum distinctio harum aliquam dignissimos fuga laboriosam ratione deleniti alias recusandae perspiciatis accusantium! Aliquam necessitatibus molestiae provident. Saepe. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe aperiam deserunt nobis nam impedit perspiciatis, nemo dolores est exercitationem reprehenderit nesciunt sapiente maxime ratione aut harum nulla vel reiciendis tenetur.</p>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente et excepturi dicta eius, rerum odit! Animi quod ipsa adipisci accusantium ipsum amet facere repellendus. Atque ratione animi soluta possimus assumenda. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus, at, quia nobis nulla mollitia minima, repellendus consequuntur delectus dolor tempore repudiandae odit veritatis illum ipsa cum esse. Dicta, quibusdam animi! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident nihil amet itaque, fuga quod officiis qui odio perspiciatis ratione suscipit, cumque quasi vel iure quae sit iusto error incidunt ad! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe ab, suscipit quaerat dolorum distinctio harum aliquam dignissimos fuga laboriosam ratione deleniti alias recusandae perspiciatis accusantium! Aliquam necessitatibus molestiae provident. Saepe. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe aperiam deserunt nobis nam impedit perspiciatis, nemo dolores est exercitationem reprehenderit nesciunt sapiente maxime ratione aut harum nulla vel reiciendis tenetur.</p>
+
+
+
+
+
+
+
 </body>
 </html>
