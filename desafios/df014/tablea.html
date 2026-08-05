@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabela do desafio 014</title>
+
+    <style>
+
+        body{
+            background-color: #1f0735;
+        }
+
+
+
+        table {
+            background-color: rgb(221, 178, 221);
+            border-collapse: collapse;
+            width: 500px;
+            margin: auto;
+            margin-top: 250px;
+        }
+
+        th, td {
+            border: 1px solid #7e07ec;
+            padding: 8px;
+            text-align: center;
+        }
+
+        thead,.media{
+            background-color: rgba(163, 97, 224, 0.842);
+
+        }
+        </style>
+</head>
+<body>
+    <table>
+        <thead>
+          <tr>
+            <th rowspan="2" scope="col">áreas</th>
+            <th rowspan="2" scope="col">diciplinas</th>
+            <th colspan="2" scope="col">notas</th>
+            <th rowspan="2" scope="col">médias</th>
+        </tr>
+        <tr><th scope="col">nota1</th>
+            <th scope="col">nota2</th>
+        </tr>
+</thead>
+        <tbody>
+            <tr>
+                <th rowspan="4" scope="rowgroup">Exatas</th>
+                <td>matemática</td>
+                <td>8</td>
+                <td>9</td>
+                <td>8,5</td>
+            </tr>
+            <tr>
+                <td>física</td>
+                <td>7</td>
+                <td>8</td>
+                <td>7,5</td>
+            </tr>
+            <tr>
+                <td>Química</td>
+                <td>7</td>
+                <td>8</td>
+                <td>7,5</td>
+            </tr>
+            <tr>
+                <td>Biologia</td>
+                <td>7</td>
+                <td>8</td>
+                <td>7,5</td>
+            </tr>
+            <tr class="media">
+                <th colspan="4" scope="row">Media de exatas</th>
+                <td>00</td>
+            </tr>
+               <tr>
+                <th rowspan="2" scope="rowgroup">Humanas</th>
+                <td>Hístoria</td>
+                <td>8</td>
+                <td>9</td>
+                <td>8,5</td>
+            </tr>
+            <tr>
+                <td>Geografia</td>
+                <td>7</td>
+                <td>8</td>
+                <td>7,5</td>
+            </tr>
+             <tr class="media">
+                <th colspan="4" scope="row">Media de humanas</th>
+                <td>00</td>
+            </tr>
+</tbody>
+    
+    </table>
+
+</body>
+</html>
