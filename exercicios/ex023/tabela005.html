@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercício de tabela</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        h1{
+            text-align: center;
+            color: #333;
+            }
+
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            text-align: center;
+            margin: auto;
+
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid black;
+        }
+
+        caption {
+            caption-side: top;
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        .roxo{
+            background-color: rgb(165, 95, 235);
+        }
+
+        .verde{
+            background-color: lightgreen;
+        }
+    </style>
+
+</head>
+<body>
+
+        <h1>Exercício de Tabela</h1>
+
+    <table>
+        <colgroup>
+            <col class="roxo">
+            <col class="verde" span="2">
+            <col class="roxo">
+        </colgroup>
+        
+        <tr>
+            <caption>cadrastro</caption>
+            <th scope="col">nome</th>
+            <th scope="col">sexo</th>
+            <th scope="col">idade</th>
+            <th scope="col">profissão</th>
+        </tr>  
+        <tr>
+            <td>joão</td>
+            <td>masculino</td>
+            <td>25</td>
+            <td>programador</td>
+        </tr>
+        <tr>
+            <td>maria</td>
+            <td>feminino</td>
+            <td>30</td>
+            <td>designer</td>
+        </tr>
+        <tr>
+            <td>pedro</td>
+            <td>masculino</td>
+            <td>35</td>
+            <td>engenheiro</td>
+        </tr>
+        <tr>
+            <td>Magnos</td>
+            <td>masculino</td>
+            <td>20</td>
+            <td>caçador de recompensas</td>
+        </tr>
+        <tr>
+            <td>Tetzel</td>
+            <td>masculino</td>
+            <td>32</td>
+            <td>mestre elementar do vento</td>
+        </tr>
+        <tr>
+            <td>Israel</td>
+            <td>masculino</td>
+            <td>35</td>
+            <td>mestre elementar do raio</td>
+        </tr>
+        <tr>
+            <td>Albion</td>
+            <td>masculino</td>
+            <td>21</td>
+            <td>Recepitáculo</td>
+        </tr>
+    </table>
+</body>
+</html>
