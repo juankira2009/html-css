@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste de fórmulario</title>
+    <style>
+        body{
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>teste de fórmulario</h1>
+
+    <form action="cadastro.php" method="get" autocomplete="on">   
+
+        <fieldset>
+            <legend style="font-weight: bolder;">sexo</legend>
+
+            <input type="radio" name="sexo" id="isexm" value="M">
+            <label for="isexm">masculino</label><br>
+masculino
+            <input type="radio" name="sexo" id="isexf" value="F">
+            <label for="isexf">feminino</label>
+
+        </fieldset>
+
+        <fieldset>
+            <legend style="font-weight: bolder;">esportes favoritos</legend>
+            <input type="checkbox" name="fut" id="ifut"><label for="ifut">futebol</label><br>
+
+            <input type="checkbox" name="fut" id="ifut"><label for="ifut">basquete</label><br>
+
+            <input type="checkbox" name="fut" id="ifut"><label for="ifut">tênis</label><br>
+
+            <input type="checkbox" name="fut" id="ifut"><label for="ifut">baseboll</label><br>
+
+            <input type="checkbox" name="cri" id="icri"><label for="icri">criquet</label><br>
+            
+        </fieldset>
+
+<p>
+    <input type="submit" value="enviar">
+    <input type="reset" value="limpar">
+</p>
+
+
+
+
+
+
+
+    </form>
+</body>
+</html>
