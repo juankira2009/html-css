@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+   /* para a impressora*/
+
+*  {
+    margin: 10px;
+    padding: 10px;
+   }
+
+   html{
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 1.1em;
+      line-height: 1.4em;
+   }
+
+   menu{
+      display: none;
+   
+   }
+
+   article::after{
+      content: 'este artigo foi impresso através site www.cursoemvideo.com';
+   }
