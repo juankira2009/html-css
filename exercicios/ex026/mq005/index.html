@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu em hamburguer</title>
+    <link rel="stylesheet" href="estilos/style.css">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu"/>
+
+   <link rel="stylesheet" href="estilos/media.css">
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <h1>site duvidoso</h1>
+    <span id="b" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <menu id="m">
+            <ul>
+                <li><a href="#">opção 1</a></li>
+                <li><a href="#">opção 2</a></li>
+                <li><a href="#">opção 3</a></li>
+                <li><a href="#">opção 4</a></li>
+                <li><a href="#">opção 5</a></li>
+            </ul>
+        </menu>
+    </header>
+
+    <main>
+
+        <article>
+            <h2>qualquer assunto</h2>
+
+            <p>Lorem ipsum, dolor sit amet 
+consectetur adipisicing elit. Error, nihil! Dolores fugit amet velit magnam nemo laboriosam doloremque, quaerat, dicta deserunt, voluptatum est voluptate nisi delectus ab hic quidem aperiam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis odio ullam, provident illo quod excepturi at veritatis? Ut possimus necessitatibus quam voluptate, consequatur mollitia reprehenderit ipsam, rem reiciendis beatae minus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero fugit sit harum dignissimos ipsum amet quo nemo? Voluptatum, quasi omnis natus, cumque veritatis porro deleniti sequi, repudiandae quam accusantium quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae eaque culpa dolores magnam molestias omnis excepturi deserunt dolore explicabo. Adipisci eos, vel maiores officia placeat vero ad! Officiis, exercitationem odio!</p>
+            
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error, nihil! Dolores fugit amet velit magnam nemo laboriosam doloremque, quaerat, dicta deserunt, voluptatum est voluptate nisi delectus ab hic quidem aperiam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis odio ullam, provident illo quod excepturi at veritatis? Ut possimus necessitatibus quam voluptate, consequatur mollitia reprehenderit ipsam, rem reiciendis beatae minus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero fugit sit harum dignissimos ipsum amet quo nemo? Voluptatum, quasi omnis natus, cumque veritatis porro deleniti sequi, repudiandae quam accusantium quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae eaque culpa dolores magnam molestias omnis excepturi deserunt dolore explicabo. Adipisci eos, vel maiores officia placeat vero ad! Officiis, exercitationem odio!</p>
+        </article>
+    </main>
+    <script>
+
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else { 
+                itens.style.display = 'none'
+            }
+        }
+        
+        function clickMenu(){
+            if (m.style.display == 'block'){
+                m.style.display = 'none'
+            }
+            else{ m.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>

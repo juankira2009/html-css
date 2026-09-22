@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+/* para a demais mídias*/
+
+/* Pesquisar: typical devices breackpoints
+----------------------------------------------
+
+pequenas telas: até 600px
+celulares: de 601px até 768px
+tablets: de 769px até 992px
+descktops: de 993px até 1200px
+grandes telas: acima de 1200px
+*/
+
+@media print {/*IMPRESSÃO*/
+
+    
+    main{
+        
+        border: 2px solid rgb(0, 0, 0);
+        width: 90vw;
+    }
+     main h1{
+        background-color: rgba(105, 105, 105, 0.589) ;
+        text-shadow: none;
+        color: black;
+        
+     }
+
+     main::after{
+        text-decoration: overline;
+        content: "essa página foi criada pelo site www.cursoemvideo.com";
+        
+
+
+     }
+
+        img#cll{display: none;}
+        img#tv{display: none;}
+        img#pt{display: block;}
+        img#tb{display: none;}
+        img#pc{display: none;}
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 992px){/*tablets*/
+
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+    main{
+        background-color: rgba(240, 255, 255, 0.493);
+    }
+     main h1{
+        background-color: rgba(105, 105, 105, 0.589) ;
+     }
+
+        img#cll{display: none;}
+        img#tv{display: none;}
+        img#pt{display: none;}
+        img#tb{display: block;}
+        img#pc{display: none;}
+    
+}
+
+
+@media screen and (min-width: 993px) and (max-width: 1200px){/*desctops*/
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+      main{
+        background-color: rgba(255, 0, 255, 0.493);
+    }
+     main h1{
+        background-color: rgba(137, 43, 226, 0.486);
+     }
+
+        img#cll{display: none;}
+        img#tv{display: none;}
+        img#pt{display: none;}
+        img#tb{display: none;}
+        img#pc{display: block;}
+
+
+
+
+
+}
+
+@media screen and (min-width: 1200px){/*telas grandes*/
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+      main{
+        background-color: rgba(161, 161, 161, 0.589);
+    }
+
+     main h1{
+        background-color: darkgray ;
+        
+     }
+
+        img#cll{display: none;}
+        img#tv{display: block;}
+        img#pt{display: none;}
+        img#tb{display: none;}
+        img#pc{display: none;}
+}
+
