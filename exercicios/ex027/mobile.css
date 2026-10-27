@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+:root{
+
+    --cor1:#590d22;
+    --cor2:#c9184a;
+    --cor3:#ff7b00;
+    --cor4:#ffb5a7;
+}
+
+header h1{
+    
+    flex: 1 1 500px;
+    text-align: center;
+}
+
+
+header nav {
+    flex-flow: column wrap;
+    align-items:center;
+    flex: 1 1 100px
+
+}
+
+
+header a{
+    flex: 1 1 50px;
+    width: 90vw;
+    border: 3px solid var(--cor1);
+    text-align: center;
+
+}
