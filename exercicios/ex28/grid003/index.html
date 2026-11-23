@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid layout na prática</title>
+    <style>
+        div.container{
+        background-color: rgb(221, 251, 152);
+        border: 3px solid yellowgreen;
+        display: grid ;
+        grid-auto-flow: column;
+        grid-template-columns: 100px 40% 1fr;
+        grid-template-rows: repeat(3, 80px);
+        grid-auto-columns: 80px;
+        grid-auto-rows: 80px;
+        gap: 20px;  
+        place-items: center start;
+        place-content:normal normal ;
+        }
+
+        div.item{
+            border: 2px solid rebeccapurple;
+            background-color: beige;
+            padding: 10px;
+            margin: 5px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">j</div>
+        <div class="item">k</div>
+        <div class="item">I</div>
+        
+        
+        
+    </div>
+</body>
+</html>

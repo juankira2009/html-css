@@ -1,0 +1,45 @@
+
+
+div{
+
+    text-align: center;
+    font-size: 1.7em;
+    box-sizing:border-box ;
+    border: 2px solid mediumslateblue ;
+    background-color:azure;
+}
+
+
+
+
+div.container{
+    display: grid ;
+    grid-template: repeat(3,200px)/repeat(3,1fr);
+    place-items: normal normal;
+    place-content: normal normal;
+    border: none;
+    gap: 5px;
+}
+
+div.caixa1{
+grid-column-start: 1;
+grid-column-end: -1;
+grid-row-start: 1;
+grid-row-end: 2;
+
+}
+
+div.caixa2{
+grid-column-start: 1;
+grid-column-end: 3;
+grid-row-start:2 ;
+grid-row-end: -2;
+
+}
+
+div.caixa3{
+    grid-column-start:-3;
+grid-column-end: -1;
+grid-row-start: 3;
+grid-row-end: 3;
+}
