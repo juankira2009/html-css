@@ -3,6 +3,8 @@
 *{
     font-size: 1.2em;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', 'Arial', 'sans-serif';
+    padding: 0px;
+    margin: 0px;
 }
 
 :root{
@@ -16,32 +18,41 @@
 
 div.container{
     display: grid;
-    grid-template: 100px 50px 350px 50px/100px 1fr 190px;
+    grid-template: 80px 40px 1fr 40px/  300px 1fr;
+    width: 100vw;
+    height: 100vh;
+    gap: 5px;
 }
 
-div.top{
+.caixa{
+    box-shadow: 3px 3px 2px #0c011f81;
+    padding: 10px;
+    font-weight: bolder;
+}
+
+div#top{
     text-align: center;
     background-color: var(--cor5);
     color: bisque;
     grid-row: 1/1;
-    grid-column: 1/-1;
+    grid-column: 1/4;
     justify-content: center;
     align-items: center;
     
 }
 
-div.menu{
+div#menu{
     text-align: center;
     background-color: var(--cor4);
     color: bisque;
     grid-row: 2/2;
-    grid-column: 1/-1;
+    grid-column: 1/4;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-div.firth{
+div#firth{
     display: flex;
     text-align: center;
     background-color: var(--cor3);
@@ -53,7 +64,7 @@ div.firth{
     align-items: center;
 }
 
-div.second{
+div#second{
     
     text-align: center;
     background-color: var(--cor2);
@@ -65,12 +76,12 @@ div.second{
     align-items: center;
 }
 
-div.foot{
+div#foot{
     text-align: center;
     background-color: var(--cor1);
     color: rgb(163, 134, 79);
     grid-row: 4/-1;
-    grid-column: 1/-1;
+    grid-column: 1/4;
     display: flex;
     justify-content: center;
     align-items: center;
